@@ -1,56 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Encryptor</title>
-</head>
+    <title>Encriptador/Desencriptador</title>
+   <link rel="stylesheet" href="./css/style.css">
 <body>
-    <header class="logo-container">
-        <div class="logo">
-            <img  src="img/Vector.png" alt="">
-        </div>
-    </header>
-<div class="container">
-    <section >
-        <div class="txtIngresar">
-            <textarea type="text" class="txt-encriptador" placeholder="Ingrese el texto aqui" cols="30" rows="10" ></textarea>
-            <!-- <input type="text" placeholder="Ingrese el texto aqui"> -->
-        </div>
-        <div class="containerButton">
-            <div class="instrucciontxt">
-                <img class="item" src="img/Vector1.png" alt="img">
-                <div class="item">
-                    <p>Solo letras minúsculas y sin acentos</p>
-                </div>
-            </div>
-            <button class="encrip" onclick="btnEncriptar()" >Encriptar</button>
-            <button class="desencrip" onclick="">Desencriptar</button>
+    <div class="container">
+    <section>
+        <img src="./img/Vector.png" alt="Logo" style="width: 50px; height: 50px;">
+        
+        <input type="text" placeholder="Ingrese el texto aquí">
+        <p>Solo letras minúsculas y sin acentos</p>
+        <div class="container-btn">
+            <button class="btn-blue" onclick="encriptar()">Encriptar</button>
+            <button class="btn-gray" onclick="desencriptar()">Desencriptar</button>
         </div>
     </section>
-    <section >
-        <div class="txtRespuesta">
-            <div class="">
-                <img class="muñeco" src="img/Muñeco.png" alt="img">
-            </div>
-            <div class="indicaciones-txt">
-                <p>Ningún mensaje fue encontrado</p>
-                <textarea type=" text" class="muestra-msj" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar." ></textarea>
-            </div>
-            <button class="copied">Copiar</button>
-        </div>
-    </section>
-</div>  
-    <footer>
-        <div>By Cristian Espejel</div>
 
-    </footer>
-    
+    <section class="second-section">
+        <div class="message-container">
+            <img src="./img/Muñeco.png" alt="Imagen">
+            <p class="dynamic-text">Ningún mensaje fue encontrado</p>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Ingresa el texto que desees encriptar o desencriptar" >
+        </div>
+    </section>
+
 </div>
-
-<script src="js/script.js"></script>
-
 </body>
 </html>

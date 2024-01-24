@@ -1,160 +1,99 @@
-*{
-    background-color: #E5E5E5;
-    margin:0;
-    padding: 0;
-}
-
-.logo-container{
-
-    width: 100%;
-    height: 110px;
-    left: 40px;
-    top: 40px;
+body {
     
-
-}
-.logo{
-   
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
 
 }
 .container{
     display: flex;
-    
 }
-textarea{
-    border: none;
-}
-
-.txtIngresar{
-    margin-top: 90px;
-    position: relative;
-    margin-left: 90px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-}
-.txtIngresar textarea::placeholder{
-    color: #0A3871;
-}
-.containerButton{
-    margin-left: 120px;
-    margin-top: 300px;
-    /* align-items: flex-end; */
-}
-.instrucciontxt{
-    display: flex;
-    margin-bottom: 20px;
-}
-.encrip{
-    background-color: #0A3871;
-    color: #FFFFFF;
-    border-radius: 24px;
-    width: 300px;
-    height: 60px;
-    margin-right: 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-}
-.desencrip{
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
-    color: #0A3871;
-    border-radius: 24px;
-    width: 300px;
-    height: 60px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+section {
+    margin: 50px 2.5%;
+    padding: 20px;
 }
 
-.txtRespuesta{
-    background: #FFFFFF;
-    
-    margin-left: 70px;
-    margin-right: 40px;
-    width: 400px;
-    height: 700px;
-    align-items: initial;
-    border-radius: 32px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    align-items: center;
+img {
+    float: left;
+    margin-right: 10px;
+}
+
+input {
+    width: 36.0625rem;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+p {
+    color: #888;
+}
+.container-btn{
     display: flex;
     flex-direction: row;
 }
-.muñeco{
-    /* margin-top: 50px;
-     width: 300px;  */
-     position: absolute;
-     width: 336px;
-     height: 304px;
-     top: 203px;
-     margin-left: 30px;
-     background-image: #FFFFFF;
- }
-.txtRespuesta textarea::placeholder{
-    background: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
+
+button {
+    display: flex;
+    width: 20.5rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 1rem;
+}
+
+.btn-blue{
+    background-color: #0A3871;
+    color: #ffffff;
+}
+
+.btn-gray{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.second-section {
+    width: 25rem;
+    height: 59rem;
+    flex-shrink: 0;
+    max-width: 45%;
+    margin: 50px 2.5%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     text-align: center;
-    /* Gray/gray-400 */
-    color: #495057;
 }
 
-.indicaciones-txt{
-    margin-top: 300px;
-    margin-left: 80px;
-    background: #FFFFFF;
-}
-.indicaciones-txt p{
-    font-family: 'Inter';
-    width: 250px;
-    height: 58px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    /* or 29px */
-
-    text-align: center;
-
-    /* Gray/gray-500 */
-
-    color: #343A40;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
-footer{
+.message-container {
     
-    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.message-container img {
+    width: 21rem;
+    height: 19rem;
+}
+
+.dynamic-text {
+    color: #888;
+    margin-top: 10px;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.input-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 40px;
+    overflow-y: hidden;
 }
