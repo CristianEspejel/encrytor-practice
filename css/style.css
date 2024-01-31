@@ -1,99 +1,154 @@
-body {
+
+body{
+    background-color: #F3F5FC;
+}
+main{
+    display: flex;
+    width: 100%;
     
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    justify-content: space-around;
+}
+.seccion1{
     display: flex;
-
+    flex-direction: column;
 }
-.container{
+
+.logo{
+    width: 120px;
+    height: 48px;
+}
+.contenedorcajatexto{
+    width: auto;
+}
+.cajaTexto{
+    width: 577px;
+    height: 29rem;
+    background-color: #F3F5FC;
+    border: none;
+    color: #0A3871;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    resize: none;
+    outline: none;
+}
+.container-section{
+    margin-top: 250px;
+}
+.mensaje{
     display: flex;
-}
-section {
-    margin: 50px 2.5%;
-    padding: 20px;
-}
+    gap: 10px;
 
-img {
-    float: left;
-    margin-right: 10px;
 }
-
-input {
-    width: 36.0625rem;
-    padding: 10px;
-    margin-top: 10px;
-    box-sizing: border-box;
-}
-
-p {
-    color: #888;
-}
-.container-btn{
+.contenedor-botones{
     display: flex;
     flex-direction: row;
+    gap: 24px;
 }
 
-button {
+.contenedor-botones input{
     display: flex;
-    width: 20.5rem;
-    padding: 1.5rem;
+    justify-content: space-around;
+    width: 328px;
+    padding: 24px;
     align-items: flex-start;
-    gap: 0.5rem;
-    flex-shrink: 0;
-    border-radius: 1.5rem;
+    border-radius: 24px;
+}
+.btn-encriptar{
+    background:  #0A3871;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+}
+.btn-desencriptar{
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
+    font-family: Inter;
+    font-size: 16px;
+}
+.seccion2{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.contenedor-parrafo{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-parrafo p:first-child{
+    color:  #343A40;
+    align-self: stretch;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    
+}
+.contenedor-parrafo p:nth-child(2){
+    color: var(--Gray-gray-400, #495057);
+    text-align: center;
     font-family: Inter;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+.contenedor-copiar{
+    display: none;
 }
 
-.btn-blue{
-    background-color: #0A3871;
-    color: #ffffff;
-}
 
-.btn-gray{
-    background-color: #D8DFE8;
-    color: #0A3871;
-}
-
-.second-section {
-    width: 25rem;
-    height: 59rem;
-    flex-shrink: 0;
-    max-width: 45%;
-    margin: 50px 2.5%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 2rem;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    text-align: center;
-}
-
-.message-container {
+@media(max-width: 768px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajaTexto{
+        width: 43rem;
+        height: 10rem;
+        color: var(--Dark-blue-dark-blue-300, #0A3871);
+        font-family: Inter;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .mensaje{
+        margin-top: inherit;
+    }
+    .contenedor-botones{
+        gap: 1.5rem;
+    }
+    .contenedor-botones input{
+        width: 20rem;
+        height: 4rem;
+    }
     
-    padding: 20px;
-    margin-bottom: 20px;
-}
+    .btn-desencriptar{
+        font-size: 1rem;
+    }
+    .btn-encriptar{
+        font-size: 1rem;
+    }
 
-.message-container img {
-    width: 21rem;
-    height: 19rem;
-}
+    .seccion2{
 
-.dynamic-text {
-    color: #888;
-    margin-top: 10px;
-}
+        width: 43rem;
+        height: 8rem;
+        margin-top: 50px;
+    }
+    .contenedorMono{
+        display: none;
+    }
 
-.input-container {
-    margin-top: 20px;
-}
-
-.input-container input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    box-sizing: border-box;
-    min-height: 40px;
-    overflow-y: hidden;
 }
